@@ -1,0 +1,27 @@
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=8.3.0
+matplotlib>=3.4.0
+
+# Deep Learning frameworks
+torch>=1.10.0
+torchvision>=0.11.0
+tensorflow>=2.10.0
+
+# Computer Vision & Segmentation models
+detectron2>=0.6
+rasterio>=1.2.0
+scikit-image>=0.18.0
+samgeo>=0.5.0
+
+# Utilities & tools
+pycocotools>=2.0.2
+albumentations>=1.1.0
+tqdm>=4.62.0
+imageio>=2.9.0
+scikit-learn>=1.0.0
+
+# Optional but recommended
+jupyter>=1.0.0
+ipykernel>=6.0.0
