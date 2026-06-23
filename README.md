@@ -17,6 +17,7 @@ pip install -r requirements.txt
 
 ### 2. Dataset
 
+https://universe.roboflow.com/jeet-dfono/farm-boundarys
 Download datasets and organize as:
 ```
 data/datasets/
@@ -24,8 +25,6 @@ data/datasets/
 ├── valid/images/  + _annotations.coco.json
 └── test/images/   + _annotations.coco.json
 ```
-
-**Public Datasets**: xView, Agriculture-Vision, COCO
 
 Update `DATASET_PATH` in each model file before running.
 
