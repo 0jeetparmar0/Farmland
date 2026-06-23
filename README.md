@@ -1,6 +1,8 @@
 # Farmland - Agricultural Segmentation & Classification
 
 Deep learning models for farmland segmentation and classification using satellite/aerial imagery.
+This project was created as an ML research internship at BISAG-N.
+This project was implemented for learning and tinkering about different models and datasets.
 
 ## Quick Start
 
