@@ -7,8 +7,11 @@ Deep learning models for farmland segmentation and classification using satellit
 ### 1. Install
 
 ```bash
-python3 -m venv farmland_env
-source farmland_env/bin/activate
+wget https://repo.anaconda.com/miniconda/Miniconda3-py311_24.4.0-0-Linux-x86_64.sh
+bash ./Miniconda3-py311_24.4.0-0-Linux-x86_64.sh
+conda create -n farmland python=3.12 
+conda activate farmland
+
 pip install -r requirements.txt
 ```
 
