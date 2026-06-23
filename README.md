@@ -99,3 +99,61 @@ Edit model files to update:
 - `BATCH_SIZE`: Batch size
 - `EPOCHS`: Number of training epochs
 - `DEVICE`: GPU or CPU
+  
+### Metrics Calculated
+
+- **Accuracy**: Pixel-wise accuracy
+- **Precision/Recall**: For each class
+- **F1-Score**: Balanced metric
+- **IoU (Intersection over Union)**: Segmentation quality
+- **RMSE**: Against ground truth (if available)
+
+## 🎓 Tips & Best Practices
+
+1. **Data Preprocessing**:
+   - Normalize images (typically divide by 255 for 0-1 range)
+   - Ensure consistent image sizes
+   - Check COCO JSON annotations are valid
+
+2. **Training**:
+   - Start with a pretrained model (most models use ImageNet weights)
+   - Use data augmentation (Albumentations included)
+   - Monitor GPU memory with `nvidia-smi`
+
+3. **Inference**:
+   - Use batch processing for speed
+   - Image chunking for large images (see `utils/chunks.py`)
+   - Save intermediate results for debugging
+
+4. **Evaluation**:
+   - Always validate on unseen test set
+   - Calculate multiple metrics (not just accuracy)
+   - Visualize false positives/negatives
+
+---
+
+## 🐛 Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| CUDA out of memory | Reduce BATCH_SIZE or IMG_SIZE |
+| Model not loading | Check file paths in configuration |
+| Low accuracy | Try different model, augment data, increase epochs |
+| Slow inference | Enable GPU, use batch processing |
+| COCO annotation errors | Validate JSON format, check image paths |
+
+---
+
+## 📝 License
+
+This project is provided as-is for research and educational purposes.
+
+---
+
+## 📧 Contributing
+
+For improvements or bug reports, please submit issues or pull requests.
+
+---
+
+**Last Updated**: 2026
